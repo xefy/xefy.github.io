@@ -31,9 +31,16 @@ html, body { height: 100%; }
 .main-inner {
   margin: 0 auto;
   width: $content-desktop;
+  //width: 100%;
 
   +desktop-large() {
     .container & { width: $content-desktop-large; }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-inner{
+    width:100%;
   }
 }
 
